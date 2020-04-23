@@ -34,6 +34,12 @@ module App =
           DetailPage: ViewElement option
           EditPage: ViewElement option
           AboutPage: ViewElement option }
+        
+    let appCenterTest = [
+        {| TryToBuild = "Test"; TryToBuild2 = true |}
+        {| TryToBuild = "Test2"; TryToBuild2 = true |}
+        {| TryToBuild = "Test3"; TryToBuild2 = true |}
+    ]
 
     let init dbPath () = 
         let mainModel, mainMsg = MainPage.init dbPath ()
